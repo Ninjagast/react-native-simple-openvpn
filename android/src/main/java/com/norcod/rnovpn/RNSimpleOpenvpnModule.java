@@ -266,6 +266,7 @@ public class RNSimpleOpenvpnModule extends ReactContextBaseJavaModule implements
       vpnProfile.mUseCustomConfig = useCustomConfig;
       vpnProfile.mCustomConfigOptions = customConfigOptions;
       vpnProfile.mAllowedAppsVpnAreDisallowed = allowedAppsVpnAreDisallowed;
+      vpnProfile.mTlSCertProfile = "insecure";
 
       for (String pkgNames : allowedAppsVpn) {
         vpnProfile.mAllowedAppsVpn.add(pkgNames);
