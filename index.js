@@ -25,6 +25,7 @@ let stateListener = null;
 
 export const addVpnStateListener = (callback) => {
   stateListener = localEventEmitter.addListener('stateChanged', (e) => callback(e));
+  return stateListener;
 };
 
 export const removeVpnStateListener = () => {
@@ -35,4 +36,5 @@ export const removeVpnStateListener = () => {
   stateListener = null;
 };
 
+export const listener = localEventEmitter;
 export default RNSimpleOpenvpn;

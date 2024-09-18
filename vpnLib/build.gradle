@@ -80,6 +80,11 @@ android {
                     'src/ui/res'
                 ]
             }
+            aidl {
+                srcDirs = [
+                    'src/main/aidl',
+                ]
+            }
         }
     }
 }

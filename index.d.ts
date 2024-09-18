@@ -65,7 +65,8 @@ declare namespace RNSimpleOpenvpn {
 declare const addVpnStateListener: (callback: (e: VpnEventParams) => void) => void;
 
 declare const removeVpnStateListener: () => void;
+declare const listener:any;
 
-export { addVpnStateListener, removeVpnStateListener, VpnOptions, VpnEventParams };
+export { addVpnStateListener, removeVpnStateListener, VpnOptions, VpnEventParams, listener };
 
 export default RNSimpleOpenvpn;
