@@ -274,6 +274,10 @@ public class RNSimpleOpenvpnModule extends ReactContextBaseJavaModule implements
         vpnProfile.mAllowedAppsVpn.add(pkgNames);
       }
 
+        if (vpnProfile.checkProfile(reactContext) != R.string.no_error_found) {
+            throw new RemoteException(reactContext.getString(vpnProfile.checkProfile(reactContext)));
+        }
+
       ProfileManager.setTemporaryProfile(reactContext, vpnProfile);
       VPNLaunchHelper.startOpenVpn(vpnProfile, reactContext);
       promise.resolve(null);
