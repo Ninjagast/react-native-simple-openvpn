@@ -54,6 +54,7 @@ import de.blinkt.openvpn.core.ProfileManager;
 import de.blinkt.openvpn.core.VPNLaunchHelper;
 import de.blinkt.openvpn.core.VpnStatus;
 import de.blinkt.openvpn.fragments.Utils;
+import de.blinkt.openvpn.R;
 
 import java.io.BufferedReader;
 import java.io.InputStream;
