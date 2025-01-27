@@ -9,6 +9,7 @@
 
     <application
         android:extractNativeLibs="true"
+        tools:replace="android:extractNativeLibs"
         tools:ignore="UnusedAttribute">
         <meta-data
             android:name="android.content.APP_RESTRICTIONS"
